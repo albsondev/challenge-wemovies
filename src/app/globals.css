@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+  --background: #2F2E41;
+  --foreground: #171717;
+  --btnAddToCart: #009EDD;
+  --backgroundAddedOnCart: #039B00;
+  --cardMovies: #FFFFFF;
+  --btnCheckoutEnd: #009EDD;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2F2E41;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.cardMovies {
+  background: var(--cardMovies);
+}
+
+.btnCheckoutEnd,
+.btnAddToCart,
+.btnRefresh {
+  background: var(--btnAddToCart);
+}
+
+.titleCardMovies {
+  line-height: 16.34px;
+  color: #333333;
+}
+
+.cardMovierPrices {
+  color: #2F2E41;
+}
+
+.colorTextSecondary {
+  color: #999999;
+}
+
+.added {
+  background: var(--backgroundAddedOnCart);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
